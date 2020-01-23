@@ -22,7 +22,7 @@ namespace Lab_2._2
                     input = Console.ReadLine();
                     worked = int.TryParse(input, out num);
 
-                    if (num > 1290)
+                    if (num >= (Math.Pow(int.MaxValue, (double)1 / 3)))
                     {
                         Console.WriteLine("That number cubed is larger than an integer. Please enter a smaller number");
                     }
@@ -39,17 +39,14 @@ namespace Lab_2._2
                         if (num == 0)
                         {
                             Console.WriteLine("\nSilly goose, zero isn't a positive number!");
-                            
                         }
                         else 
                         {
                             Console.WriteLine("\nThat wasn't a positive number!");
-                            
                         }
                     }
-                    
 
-                } while ((worked == false) || (num <= 0) || num > 1290);
+                } while ((worked == false) || (num >= (Math.Pow(int.MaxValue, (double)1 / 3))));
 
 
                 Console.WriteLine($"\nNumber\t\tSquared\t\tCubed");
