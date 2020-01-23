@@ -66,7 +66,7 @@ namespace Lab_2._2
                 userContinue = Console.ReadLine().ToLower();
                 Console.Clear();
 
-            } while (userContinue != "n" || userContinue != "no");
+            } while (userContinue == "y" || userContinue == "yes");
 
             Console.WriteLine();
             Console.WriteLine("Thank you and see you again!");
